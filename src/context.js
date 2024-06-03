@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 const InputCalculatorContext = createContext();
 
 const DataProvider = ({ children }) => {
-  const [data, setData] = useState(0);
+  const [data, setData] = useState('0');
 
   return (
     <InputCalculatorContext.Provider value={{ data, setData }}>
